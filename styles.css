@@ -1486,8 +1486,9 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 16px 24px;
+    padding: 12px 20px;
 }
+
 
 .mobile-nav-link i {
     color: var(--primary-text);
@@ -1495,6 +1496,10 @@ body {
     width: 20px;
     text-align: center;
     flex-shrink: 0;
+}
+
+.mobile-nav-link[href="#useful"] i {
+    margin-right: 4px;
 }
 
 
@@ -2941,29 +2946,6 @@ body {
     overflow: hidden;
 }
 
-.resources-section .floating-circle {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle, transparent 60%, rgba(78, 110, 73, 0.8) 61%, rgba(78, 110, 73, 0.8) 70%, rgba(107, 138, 94, 0.6) 71%, rgba(107, 138, 94, 0.6) 80%, transparent 81%);
-    box-shadow: 0 8px 32px rgba(78, 110, 73, 0.3);
-    animation: floatAndGlow 16s ease-in-out infinite;
-}
-
-.resources-section .floating-circle:nth-child(1) {
-    top: 15%;
-    right: 10%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 2s;
-}
-
-.resources-section .floating-circle:nth-child(2) {
-    bottom: 20%;
-    left: 15%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 8s;
-}
 
 .section-description {
     font-size: 18px;
@@ -3809,6 +3791,8 @@ body {
         -webkit-tap-highlight-color: rgba(78, 110, 73, 0.1);
         user-select: none;
         -webkit-user-select: none;
+        gap: 12px !important;
+        padding: 12px 20px;
     }
 }
 
@@ -3868,6 +3852,8 @@ body {
         -webkit-tap-highlight-color: rgba(78, 110, 73, 0.1);
         user-select: none;
         -webkit-user-select: none;
+        gap: 12px !important;
+        padding: 12px 20px;
     }
 
     .mobile-nav-btn {
@@ -3992,6 +3978,10 @@ body {
         overscroll-behavior-y: contain;
     }
 
+    .mobile-nav-link {
+        gap: 12px !important;
+    }
+
     .mobile-menu-header {
         padding: 20px 24px;
     }
@@ -4008,6 +3998,8 @@ body {
         -webkit-tap-highlight-color: rgba(78, 110, 73, 0.1);
         user-select: none;
         -webkit-user-select: none;
+        gap: 12px !important;
+        padding: 12px 20px;
     }
 
     .mobile-nav-btn {
